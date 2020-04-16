@@ -32,9 +32,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.dgv = new System.Windows.Forms.DataGridView();
             this.vEVŐKToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.kERESŐToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.dgv = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -54,6 +54,21 @@
             this.menuStrip1.Size = new System.Drawing.Size(709, 45);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // vEVŐKToolStripMenuItem
+            // 
+            this.vEVŐKToolStripMenuItem.ForeColor = System.Drawing.Color.Red;
+            this.vEVŐKToolStripMenuItem.Name = "vEVŐKToolStripMenuItem";
+            this.vEVŐKToolStripMenuItem.Size = new System.Drawing.Size(114, 41);
+            this.vEVŐKToolStripMenuItem.Text = "VEVŐK";
+            this.vEVŐKToolStripMenuItem.Click += new System.EventHandler(this.VevokTSMI_Click);
+            // 
+            // kERESŐToolStripMenuItem
+            // 
+            this.kERESŐToolStripMenuItem.ForeColor = System.Drawing.Color.Green;
+            this.kERESŐToolStripMenuItem.Name = "kERESŐToolStripMenuItem";
+            this.kERESŐToolStripMenuItem.Size = new System.Drawing.Size(125, 41);
+            this.kERESŐToolStripMenuItem.Text = "KERESŐ";
             // 
             // dgv
             // 
@@ -94,20 +109,6 @@
             this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv.Size = new System.Drawing.Size(685, 390);
             this.dgv.TabIndex = 1;
-            // 
-            // vEVŐKToolStripMenuItem
-            // 
-            this.vEVŐKToolStripMenuItem.ForeColor = System.Drawing.Color.Red;
-            this.vEVŐKToolStripMenuItem.Name = "vEVŐKToolStripMenuItem";
-            this.vEVŐKToolStripMenuItem.Size = new System.Drawing.Size(114, 41);
-            this.vEVŐKToolStripMenuItem.Text = "VEVŐK";
-            // 
-            // kERESŐToolStripMenuItem
-            // 
-            this.kERESŐToolStripMenuItem.ForeColor = System.Drawing.Color.Green;
-            this.kERESŐToolStripMenuItem.Name = "kERESŐToolStripMenuItem";
-            this.kERESŐToolStripMenuItem.Size = new System.Drawing.Size(125, 41);
-            this.kERESŐToolStripMenuItem.Text = "KERESŐ";
             // 
             // Column1
             // 

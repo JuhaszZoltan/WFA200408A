@@ -46,17 +46,33 @@ namespace WFA200408A
 
             while (r.Read())
             {
+                int s = r.GetInt32(3);
+
+                string allapot;
+
+                     if (s < 25) allapot = "hibátlan";
+                else if (s < 50) allapot = "újszerű";
+                else if (s < 66) allapot = "megkímélt";
+                else allapot = "alkatrésznek";
+
+
                 dgv.Rows.Add(
-                    //név
-                    r[0],
-                    //ár
-                    Math.Round((r.GetInt32(1) - ((r.GetInt32(1) / 100F) * r.GetInt32(3)))
-                    * (r.GetBoolean(2) ? 0.8 : 1)) + " CP",
-                    //állapot
-                    r[3]);
+                        //név
+                        r[0],
+                        //ár
+                        Math.Round((r.GetInt32(1) - ((r.GetInt32(1) / 100F) * r.GetInt32(3)))
+                        * (r.GetBoolean(2) ? 0.8 : 1)) + " CP",
+                        //állapot
+                        allapot);
             }
 
             conn.Close();
+        }
+
+        private void VevokTSMI_Click(object sender, EventArgs e)
+        {
+            var frm = new FrmVevo(conn);
+            frm.ShowDialog();
         }
     }
 }
