@@ -74,5 +74,11 @@ namespace WFA200408A
             var frm = new FrmVevo(conn);
             frm.ShowDialog();
         }
+
+        private void KeresoTSMI_Click(object sender, EventArgs e)
+        {
+            var frm = new FrmKereso(conn);
+            frm.ShowDialog();
+        }
     }
 }

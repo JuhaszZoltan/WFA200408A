@@ -51,7 +51,7 @@
             this.kERESŐToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(709, 45);
+            this.menuStrip1.Size = new System.Drawing.Size(711, 45);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -69,6 +69,7 @@
             this.kERESŐToolStripMenuItem.Name = "kERESŐToolStripMenuItem";
             this.kERESŐToolStripMenuItem.Size = new System.Drawing.Size(125, 41);
             this.kERESŐToolStripMenuItem.Text = "KERESŐ";
+            this.kERESŐToolStripMenuItem.Click += new System.EventHandler(this.KeresoTSMI_Click);
             // 
             // dgv
             // 
@@ -107,7 +108,7 @@
             this.dgv.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgv.RowTemplate.Height = 24;
             this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv.Size = new System.Drawing.Size(685, 390);
+            this.dgv.Size = new System.Drawing.Size(687, 390);
             this.dgv.TabIndex = 1;
             // 
             // Column1
@@ -132,7 +133,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(709, 450);
+            this.ClientSize = new System.Drawing.Size(711, 450);
             this.Controls.Add(this.dgv);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
